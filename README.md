@@ -10093,3 +10093,11 @@ THE RESULT:
 |PHILLIP PIDDICK|
 |ALLIX LAWRIE|
 |ROCKEY GIMBRETT|
+``` sql
+
+UPDATE club_member_info_cleaned
+SET age = NULL
+WHERE age = '';
+UPDATE club_member_info_cleaned
+SET age = 68
+WHERE age > 85;
