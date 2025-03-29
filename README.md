@@ -1,7 +1,7 @@
 # SQL-data-cleaning
 
 This is an educational project on data cleaning and preparation using SQL. The original database in CSV format is located in the file club_member_info.csv. Here, we will explore the steps that need to be applied to obtain a cleansed version of the dataset.
-## Data Induction
+## Data Introduction
 ``` SQL
 SELECT * FROM club_member_info cmi 
 LIMIT 10;
@@ -32,6 +32,10 @@ CREATE TABLE club_member_info_cleaned (
 	full_address VARCHAR(50),
 	job_title VARCHAR(50),
 	membership_date VARCHAR(50)
+);
+```
+### Copy all values from original table
+``` sql
 INSERT INTO club_member_info_cleaned
 SELECT * FROM club_member_info ;
 ```
